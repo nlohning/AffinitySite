@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Affinity eSports</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width">
+	<meta name="description" content="The best eSports of all kind, for everyone.">
+	<meta name="keywords" content="website, league of legends, eSports, affinity, Affinity esports">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+		<div class="container">
+			<div id="branding">
+				<h1><span class="highlight">Affinity</span> eSports</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="Default.aspx">Home</a></li>
+					<li><a href="Teams.aspx">Teams</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <footer>
+		<p>Affinity eSports, Copyright &copy 2018</p>
+	</footer>
+</body>
+</html>
